@@ -8,12 +8,12 @@ export class User {
   @Column({ length: 500 })
   name: string;
 
-  @Column()
+  @Column({ nullable: true })
   photo: string;
 
-  @Column()
+  @Column({ nullable: true })
   email: string;
 
-  @Column()
+  @Column({ nullable: true })
   role: string;
 }
